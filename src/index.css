@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        @apply antialiased text-navy bg-ivory;
+    }
+
+    body {
+        @apply min-h-screen overflow-x-hidden font-sans bg-ivory;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-serif text-navy font-medium tracking-tight;
+    }
+}
+
+@layer utilities {
+    .glass-panel {
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 86, 179, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .medical-shadow {
+        box-shadow: 0 10px 40px -10px rgba(0, 86, 179, 0.08);
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #F1F5F9;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #CBD5E1;
+        border-radius: 9999px;
+    }
+}
