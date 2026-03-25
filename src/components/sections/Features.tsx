@@ -3,10 +3,10 @@ import { config } from "@/config";
 import { ArrowRight } from "lucide-react";
 
 const serviceImages = [
-    "/images-media/Dentista examinando los dientes del paciente femenino.webp",
-    "/images-media/Ortodoncista con guantes de látex manipulando equipos dentales.webp",
-    "/images-media/Un primer plano de los instrumentos dentales.jpg", // No se encontró webp para este
-    "/images-media/dentista-tratando-pacientes-con-dientes.webp",
+    "/images-media/Dentista examinando los dientes del paciente femenino.jpg",
+    "/images-media/Ortodoncista con guantes de látex manipulando equipos dentales.jpg",
+    "/images-media/Un primer plano de los instrumentos dentales.jpg",
+    "/images-media/dentista-tratando-pacientes-con-dientes.jpg",
 ];
 
 export function Features() {

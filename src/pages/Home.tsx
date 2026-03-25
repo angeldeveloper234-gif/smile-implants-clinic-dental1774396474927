@@ -10,7 +10,7 @@ export function Home() {
         <main className="relative">
             <SEO 
                 description={`Líderes en ${branding.trade}. Tratamientos dentales de alta calidad en ${config.dynamicContent.city}. ${branding.slogan}.`}
-                keywords={`${branding.name}, dentista, ortodoncia, diseño de sonrisa, ${config.dynamicContent.city.toLowerCase()}`}
+                keywords={`${branding.name}, dentista, ortodoncia, diseño de sonrisa, cabo san lucas`}
             />
             <Hero />
             <Stats />

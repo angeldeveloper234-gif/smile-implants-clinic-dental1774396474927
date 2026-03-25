@@ -13,7 +13,7 @@ export function SEO({ title, description, keywords, image, url }: SEOProps) {
     const { branding } = config;
 
     useEffect(() => {
-        const fullTitle = title ? `${title} | ${branding.name}` : `${branding.name} | Implantología`;
+        const fullTitle = title ? `${title} | ${branding.name}` : branding.name;
         document.title = fullTitle;
 
         const setMeta = (name: string, content: string, isProperty = false) => {

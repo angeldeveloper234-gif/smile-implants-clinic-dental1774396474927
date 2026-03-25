@@ -8,24 +8,23 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                background: "#0F1216", // Deep Obsidian
-                foreground: "#E0E0E0", // Off-White
-                navy: "#E0E0E0",       // Mapped to Text (Off-White)
-                ivory: "#0F1216",      // Mapped to Background (Obsidian)
-                peach: "#D4AF37",      // Mapped to Gold
-                softblue: "#16191E",   // Mapped to Dark Surface
-                white: "#FFFFFF",      // Keep White
+                background: "#EFF8FF", // Light Blue Base
+                foreground: "#121212", // Dark Body Text (per request)
+                navy: "#0060C9",       // Important elements / Primary Blue
+                ivory: "#EFF8FF",      // Background (60%)
+                peach: "#FAC927",      // Accent Gold (5%)
+                softblue: "#DAEDFB",   // Secondary Blue (30%)
+                white: "#FFFFFF",      // Pure White for clear elements
                 primary: {
-                    DEFAULT: "#D4AF37", // Gold
-                    foreground: "#0F1216",
+                    DEFAULT: "#0060C9",
+                    foreground: "#EFF8FF",
                 },
                 secondary: {
-                    DEFAULT: "#16191E", // Dark Surface
-                    foreground: "#E0E0E0",
+                    DEFAULT: "#DAEDFB",
+                    foreground: "#0060C9",
                 },
-                accent: "#D4AF37",
-                dark: "#9CA3AF",       // Gray-400 for secondary text
-                surface: "#16191E",    // Explicit surface color
+                accent: "#FAC927",
+                dark: "#121212",       // Specific dark color for body text
             },
             fontFamily: {
                 sans: ["Inter", "sans-serif"],

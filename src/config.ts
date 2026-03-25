@@ -36,6 +36,11 @@ export interface Config {
         logo: string;
         trade: string;
     };
+    contact: {
+        address: string;
+        googleMaps: string;
+        phoneDisplay: string;
+    };
     supabase: {
         url: string;
         anonKey: string;
@@ -86,27 +91,21 @@ export interface Config {
         showFAQ: boolean;
         showStats: boolean;
     };
-    contact: {
-        address: string;
-        phone: string;
-        email: string;
-        googleMapsEmbed?: string;
-        mapLink: string;
-    };
-    team: {
-        leadDoctors: string;
-        badgeText: string;
-    };
     gallery: GalleryItem[];
     products: ProductItem[];
 }
 
 export const config: Config = {
     branding: {
-        name: "Smile & Implants Clinic",
+        name: "Smile & Implants Clinic | Guadalajara",
         slogan: "Recupera la confianza de sonreír",
         logo: "Smile & Implants",
         trade: "Implantología y Rehabilitación Oral",
+    },
+    contact: {
+        address: "C. Primo Feliciano Velázquez 761, Chapalita, 44500 Guadalajara, Jal., México",
+        googleMaps: "https://www.google.com/maps/place/Smile+%26+Implants+Clinic/@20.6696649,-103.4204259,15z/data=!4m10!1m2!2m1!1sSmile+%26+Implants+Clinic!3m6!1s0x8428af7455219839:0x3dc55b0e60ed4868!8m2!3d20.6696649!4d-103.4013715",
+        phoneDisplay: "+52 33 2494 8947"
     },
     supabase: {
         url: "",
@@ -115,7 +114,7 @@ export const config: Config = {
     analytics: {
         webhookUrl: "",
     },
-    bookingUrl: "/contact",
+    bookingUrl: "#contact",
     paymentLink: "",
     googleMapsReviewUrl: "",
     dynamicContent: {
@@ -128,8 +127,8 @@ export const config: Config = {
             m2Built: "100%"
         },
         specialization: {
-            title: "Implantología de Precisión",
-            pain: "Miedo al dentista y dientes perdidos",
+            title: "Implantología",
+            pain: "Miedo al dentista y pérdida de piezas",
             ego: "Sonrisa Perfecta y Funcional",
             hook: "Resultados Garantizados"
         },
@@ -197,15 +196,15 @@ export const config: Config = {
     testimonials: [
         {
             name: "Roberto G.",
-            role: "Implantes Totales",
+            role: "Paciente de Implantes",
             text: "El Dr. Mongalo y su equipo cambiaron mi vida. Puedo comer de todo nuevamente.",
-            tags: ["Implantes", "Guadalajara"]
+            tags: ["Implantes", "Profesionalismo"]
         },
         {
             name: "Ana María L.",
             role: "Diseño de Sonrisa",
             text: "La atención en Guadalajara fue excelente. Instalaciones de primer mundo.",
-            tags: ["Estética", "Chapalita"]
+            tags: ["Estética", "Guadalajara"]
         },
         {
             name: "Carlos D.",
@@ -215,9 +214,9 @@ export const config: Config = {
         }
     ],
     demoUser: {
-        name: "Recepción",
+        name: "Smile & Implants Recepción",
         email: "contacto@smileimplants.com",
-        whatsapp: "+5213333596877"
+        whatsapp: "+523333596877"
     },
     features: {
         showGallery: true,
@@ -226,16 +225,17 @@ export const config: Config = {
         showFAQ: true,
         showStats: true
     },
-    contact: {
-        address: "C. Primo Feliciano Velázquez 761, Chapalita, 44500 Guadalajara, Jal., México",
-        phone: "+52 33 2494 8947",
-        email: "citas@smileimplants.com",
-        mapLink: "https://www.google.com/maps/place/Smile+%26+Implants+Clinic/@20.6696649,-103.4204259,15z/data=!4m10!1m2!2m1!1sSmile+%26+Implants+Clinic!3m6!1s0x8428af7455219839:0x3dc55b0e60ed4868!8m2!3d20.6696649!4d-103.4013715"
-    },
-    team: {
-        leadDoctors: "Dr. Jerry Mongalo",
-        badgeText: "Top Doctor",
-    },
-    gallery: [],
+    gallery: [
+        {
+            title: "Clínica Chapalita",
+            category: "Instalaciones",
+            image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=800&auto=format&fit=crop"
+        },
+        {
+            title: "Instalaciones Médicas",
+            category: "Equipamiento",
+            image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=800&auto=format&fit=crop"
+        }
+    ],
     products: []
 };

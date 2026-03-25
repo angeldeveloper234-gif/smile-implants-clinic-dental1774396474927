@@ -13,7 +13,7 @@ export function Stats() {
     ];
 
     return (
-        <section className="py-24 md:py-32 bg-background relative overflow-hidden">
+        <section className="py-24 md:py-32 bg-ivory relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                     {/* Left Column - Photography */}
@@ -23,28 +23,30 @@ export function Stats() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 0.8 }}
-                            className="relative aspect-[3/4] md:aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden border border-white/5"
+                            className="relative aspect-[3/4] md:aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden"
                         >
                             <img 
-                                src="/images-media/Dentista de pie con los brazos cruzados.webp" 
-                                alt="Dr. Mongalo - Especialista Dental" 
+                                src="/images-media/Dentista de pie con los brazos cruzados.jpg" 
+                                alt="Dr. Benito - Especialista Dental" 
                                 className="w-full h-full object-cover"
                             />
                             
-                            <div className="absolute bottom-6 left-6 right-6 md:left-auto md:right-[-20px] md:bottom-12 md:w-64 bg-surface/90 backdrop-blur-md p-5 rounded-3xl shadow-xl border border-white/10">
+                            {/* Glassmorphism Badge */}
+                            <div className="absolute bottom-6 left-6 right-6 md:left-auto md:right-[-20px] md:bottom-12 md:w-64 bg-white p-5 rounded-3xl shadow-xl border border-white/50">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 rounded-full bg-peach/20 flex items-center justify-center">
-                                        <ArrowUpRight className="text-peach w-6 h-6" />
+                                        <ArrowUpRight className="text-navy w-6 h-6" />
                                     </div>
                                     <div>
-                                        <p className="font-serif text-white font-bold text-lg leading-tight">Clínica Certificada</p>
-                                        <p className="text-xs text-dark font-medium tracking-wide">Estándares Internacionales</p>
+                                        <p className="font-serif text-navy font-bold text-lg leading-tight">Clínica Certificada</p>
+                                        <p className="text-xs text-dark/70 font-medium tracking-wide">Estándares Internacionales</p>
                                     </div>
                                 </div>
                             </div>
                         </motion.div>
                         
-                        <div className="absolute -z-10 top-1/2 left-[-10%] w-[120%] h-[80%] bg-surface rounded-[3rem] -rotate-6 transform -translate-y-1/2" />
+                        {/* Decorative Background Element */}
+                        <div className="absolute -z-10 top-1/2 left-[-10%] w-[120%] h-[80%] bg-ivory rounded-[3rem] -rotate-6 transform -translate-y-1/2" />
                     </div>
 
                     {/* Right Column - Content */}
@@ -56,12 +58,12 @@ export function Stats() {
                             transition={{ duration: 0.6 }}
                         >
                             <div className="flex items-center gap-4 mb-6">
-                                <span className="text-peach font-bold tracking-[0.2em] uppercase text-xs">La Experiencia Smile & Implants</span>
-                                <div className="h-[1px] flex-1 bg-white/10"></div>
+                                <span className="text-peach font-bold tracking-[0.2em] uppercase text-xs">La Experiencia Sunset</span>
+                                <div className="h-[1px] flex-1 bg-navy/10"></div>
                             </div>
 
-                            <h2 className="text-4xl md:text-5xl font-serif text-white leading-[1.1] mb-8">
-                                EXCELENCIA EN ODONTOLOGÍA CON <span className="italic text-peach">TRATO HUMANO</span>
+                            <h2 className="text-4xl md:text-5xl font-serif text-navy leading-[1.1] mb-8">
+                                EXCELENCIA EN ODONTOLOGÍA CON <span className="italic text-navy/70">TRATO HUMANO</span>
                             </h2>
 
                             <p className="text-dark text-lg leading-relaxed mb-10 font-sans">
@@ -88,8 +90,8 @@ export function Stats() {
                                             <CheckCircle2 className="w-5 h-5 text-peach" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-white mb-1">{item.title}</h4>
-                                            <p className="text-sm text-dark leading-relaxed max-w-sm">{item.desc}</p>
+                                            <h4 className="font-bold text-navy mb-1">{item.title}</h4>
+                                            <p className="text-sm text-dark/60 leading-relaxed max-w-sm">{item.desc}</p>
                                         </div>
                                     </li>
                                 ))}
@@ -99,7 +101,7 @@ export function Stats() {
                 </div>
 
                 {/* Stats Footer */}
-                <div className="mt-24 pt-16 border-t border-white/5">
+                <div className="mt-24 pt-16 border-t border-navy/5">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
                         {data.map((item, index) => (
                             <motion.div
@@ -110,10 +112,10 @@ export function Stats() {
                                 transition={{ delay: index * 0.1 }}
                                 className="flex flex-col items-start border-l-2 border-peach/30 pl-6"
                             >
-                                <div className="text-4xl md:text-5xl font-serif text-white font-medium mb-3">
+                                <div className="text-4xl md:text-5xl font-serif text-navy font-medium mb-3">
                                     {item.value}<span className="text-peach">{item.suffix}</span>
                                 </div>
-                                <p className="text-dark text-xs font-bold uppercase tracking-[0.15em] leading-tight">
+                                <p className="text-dark/50 text-xs font-bold uppercase tracking-[0.15em] leading-tight">
                                     {item.label}
                                 </p>
                             </motion.div>
